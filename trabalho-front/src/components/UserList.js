@@ -15,7 +15,6 @@ function UserList() {
     <div>
       <h2>Lista de Usuários (Vindos da API)</h2>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {/* Passando os dados dinâmicos para o componente filho */}
         {users.map(user => (
           <UserCard key={user.id} user={user} />
         ))}
